@@ -1,0 +1,437 @@
+---
+import pp from '../assets/pp.jpg';
+import icon_home from '../assets/icon-home.svg'
+import icon_services from '../assets/icon-services.svg'
+import icon_aboutme from '../assets/icon-aboutme.svg'
+import icon_code from '../assets/icon-code.svg'
+import icon_price from '../assets/icon-price.svg'
+import icon_project from '../assets/icon-project.svg'
+import icon_contact from '../assets/icon-contact.svg'
+import burger_btn from '../assets/burger-btn.png'
+
+import icon_onepage from '../assets/icon-onepage.svg'
+import icon_ecommerce from '../assets/icon-ecommerce.svg'
+import icon_web from '../assets/icon-web.svg'
+import icon_app_web from '../assets/icon-app-web.svg'
+import icon_software from '../assets/icon-software.svg'
+import icon_phone from '../assets/icon-phone.svg'
+
+
+import background from '../assets/home_background.mp4'
+---
+
+<header>
+    <div class="aside">
+        <div class="container-profile">
+            <img class="profile-img" src={pp.src} alt="Melvyn PETIT Développeur web freelance">
+            <h1>Melvyn Petit</h1>
+            <h2>Développeur Fullstack</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="#home"><img class="icon" src={icon_home.src} alt="icon"><p>Accueil</p></a></li>
+                <li><a href="#aboutme"><img class="icon" src={icon_aboutme.src} alt="icon"><p>Qui suis-je ?</p></a></li>
+                <li><a href="#services"><img class="icon" src={icon_services.src} alt="icon"><p>Services</p></a></li>
+                <li><a href="#foryou"><img class="icon" src={icon_code.src} alt="icon"><p>Formules</p></a></li>
+                <li><a href="#pricing"><img class="icon" src={icon_price.src} alt="icon"><p>Tarifs</p></a></li>
+                <!-- <li><a href="#projects"><img class="icon" src={icon_project.src} alt="icon"><p>Dernier projet</p></a></li> -->
+                <li><a href="#contact"><img class="icon" src={icon_contact.src} alt="icon"><p>Contact</p></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<img src={burger_btn.src} alt="bouton burger" class="btn-burger"/>
+<main id="main">
+    <section id="home" class="home">
+        <video autoplay muted loop playsinline id="home_background">
+            <source src={background} type="video/mp4">
+        </video>
+        <div class="title animation animation-fading">
+            <h1>Melvyn Petit</h1>
+            <p>Je suis <span class="typed"></span></p>
+        </div>
+    </section>
+    <section id="aboutme" class="aboutme">
+        <div class="container-aboutme">
+            <div>
+                <h2 class="subtitle animation animation-fading">Qui suis-je ?</h2>
+                <h3 class="subsubtitle animation animation-fading"></h3>
+                <div class="container-data animation animation-fading">
+                    <p>
+                        Depuis mes 15 ans, j'ai toujours su vouloir m'orienter dans le développement informatique, avec une préférence pour le développement logiciel. 
+                        Mais durant mes études supérieures, j'ai aussi découvert le monde du web, dans lequel j'ai pu étudier toutes les notions qui me servent encore
+                        aujourd'hui pour la réalisation de mes projets.
+                    </p>
+                    <p>
+                        Titulaire d'un BUT Informatique avec une spécialisation dans le web, je continue actuellement mon cursus universitaire avec l'ambition de décrocher un diplôme
+                        d'ingénieur informatique, dont le parcours me permet déjà de travailler sur des projets de développement web et logiciels qui exigent parfois créativité et innovation.
+                    </p>
+                    <p>
+                        Souhaitant d'avantage étendre cette passion, je me lance désormais en freelance, en vous proposant mes services dans toute la France.
+                    </p>
+                </div>
+            </div>
+            <div class="container-profile-picture animation animation-fading">
+                <img class="profile-picture" src={pp.src} alt="Melvyn Petit développeur web freelance">
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2 class="subtitle animation animation-fading">Mes services</h2>
+        <h3 class="subsubtitle animation animation-fading">Des prestations adaptées à vos besoins</h3>
+        <div class="services-list">
+            <div class="services-list-child left animation">
+                <div class="services-element">
+                    <div class="container-icon">
+                         <img src={icon_onepage.src} alt="icon">
+                    </div>
+                    <div>
+                        <h3>SITE VITRINE</h3>
+                        <p>Dynamisez votre commerce avec un site personnalisé responsive</p>
+                    </div>             
+                </div>
+                <div class="services-element">
+                    <div class="container-icon">
+                         <img src={icon_ecommerce.src} alt="icon">
+                    </div>
+                    <div>
+                        <h3>E-COMMERCE</h3>
+                        <p>Elargissez votre clientèle rapidement en commençant à vendre en ligne avec une solution clés en main.</p>
+                    </div>
+                </div>
+                <div class="services-element">
+                    <div class="container-icon">
+                         <img src={icon_web.src} alt="icon">
+                    </div>
+                    <div>
+                        <h3>REFONTE WEB</h3>
+                        <p>Redonnez un coup de jeune à votre présence en ligne avec une refonte web.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-list-child right animation">
+                <div class="services-element">
+                    <div class="container-icon">
+                         <img src={icon_app_web.src} alt="icon">
+                    </div>
+                    <div>
+                        <h3>APPLICATION WEB</h3>
+                        <p>Une application prête à l'emploi et utilisable partout à tout moment.</p>
+                    </div>
+                </div>
+                <div class="services-element">
+                    <div class="container-icon">
+                         <img src={icon_software.src} alt="icon">
+                    </div>
+                    <div>
+                        <h3>DÉVELOPPEMENT SOLUTION LOGICIEL</h3>
+                        <p>Un besoin technique ou scientifique précis ? Travaillons ensemble sur une solution innovante personnalisée.</p>
+                    </div>
+                </div>
+                <div class="services-element">
+                    <div class="container-icon">
+                         <img src={icon_phone.src} alt="icon">
+                    </div>
+                    <div>
+                        <h3>APPLICATION MOBILE</h3>
+                        <p>Et si on mettait plutôt votre projet sur une application mobile ?</p>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="foryou" class="foryou">
+        <h2 class="subtitle animation animation-fading">Déterminez votre besoin</h2>
+        <h3 class="subsubtitle animation animation-fading">Trouvez en un clic la formule qu'il vous faut</h3>
+        <div class="foryou-content">
+            <details class="animation animation-pop">
+                <summary>
+                    <span role="term">Je souhaite avoir un site web pour simplement présenter mon activité.</span>
+                </summary>
+            </details>
+            <div class="details-content">
+                <p>
+                    Ce qu'il vous faut : <b>un site vitrine</b>.
+                </p>
+                <p>
+                    Cette solution est statique, c'est-à-dire que le contenu est peu évolutif, 
+                    et le site est généralement composé d'une page ou plusieurs pages maximum. Ce support permet de présenter votre entreprise, votre activité, éventuellement quelques avis 
+                    et une page de contact. C'est une solution très efficace et la moins couteuse, que ce soit à la création ou à l'hébergement. Par exemple, 
+                    le site sur lequel vous êtes actuellement est une solution statique.
+                </p>
+            </div>
+
+            <details class="animation animation-pop">
+                <summary><span role="term">J'aimerais présenter mon activité mais aussi pouvoir poster du contenu.</span></summary>
+            </details>
+            <div class="details-content">
+                <p>
+                    Ce qu'il vous faut : <b>une solution avec CMS (Système de gestion de contenu)</b>.
+                </p>
+                <p>
+                    Dès lors que le site web va devoir permettre l'affichage de contenu dynamique (comme des posts, galeries photos, etc), il va nécessiter un système de gestion de contenu (CMS).
+                    Ce gestionnaire vous permettra de gérer simplement et par vous même tout le contenu se trouvant sur le site. Il en existe plusieurs, et je vous propose généralement dans mes prestations 
+                    <b>Wordpress</b>, très réputé dans son milieu.
+                </p>
+            </div>
+            
+            <details class="animation animation-pop">
+                <summary><span role="term">J'ai déjà un site web mais le design est vieux ou ne fonctionne plus correctement.</span></summary>
+            </details>
+            <div class="details-content">
+                <p>Ce qu'il vous faut : <b>une refonte web</b>.</p>
+                <p>
+                    Si vous disposez déjà d'une solution web mais que celle-ci n'est plus aux goûts du jour ou que vous souhaitez l'améliorer, une refonte de votre solution permettrait de la 
+                    moderniser à moindres coûts. N'hésitez-pas à me contacter et nous étudierons ensemble la meilleure solution pour redonner une jeunesse à votre site web.
+                </p>
+            </div>
+            <details class="animation animation-pop">
+                <summary><span role="term">Je voudrais vendre des produits sur mon site.</span></summary>
+            </details>
+            <div class="details-content">
+                <p>Ce qu'il vous faut : <b>une solution e-commerce</b>.</p>
+                <p>
+                    Pour vendre des produits en ligne, vous devez déployer un site e-commerce. Cette solution est le moyen parfait pour étendre rapidement vos ventes à niveau 
+                    national ou international. Elle vous permettra de vendre simplement en ligne tout vos produits, tout en gardant le contrôle sur vos commandes.
+                </p>
+            </div>
+            <details class="animation animation-pop">
+                <summary><span role="term">J'ai identifié un besoin spécifique pour lequel je souhaiterais créer une solution.</span></summary>
+            </details>
+            <div class="details-content">
+                <p>Ce qu'il vous faut : <b>une solution personnalisée</b>.</p>
+                <p>
+                    Besoins scientifiques, automatisation de process, ou juste une alternative moderne à une feuille Excel vieillissante... Il se peut que vous ayez défini un besoin métier pour lequel 
+                    il n'existe pas de solutions efficaces. Étudions ensemble votre projet pour développer <b>une application web</b> ou un <b>logiciel</b> personnalisé.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="pricing">
+        <h2 class="subtitle animation animation-fading">Tarifs</h2>
+        <h3 class="subsubtitle animation animation-fading">Un tarif adapté mais un résultat toujours de qualité !</h3>
+        <div class="pricing-content">
+            <div class="pricing-element animation animation-pop">
+                <p class="heading">SITE VITRINE <br>ONE-PAGE</p>
+                <p class="subheading">À PARTIR DE</p>
+                <p class="price">699<sup>€*</sup></p>
+                <p class="techno">Sur-mesure (codage à la main)</p>
+                <a class="button-quote" href="#contact">Demander un devis</a>
+                <ul>
+                    <li>Maquettage</li>
+                    <li>Développement complet</li>
+                    <li>Site 1 page</li>
+                    <li>Compatibilité <br>PC / mobile / tablette</li>
+                    <li>Domaine + hébergement 12 mois</li>
+                    <li>Optimisation du référencement</li>
+                    <li>Formation à l'utilisation du site</li>
+                    <li>Support 1 an</li>
+                </ul>
+            </div>
+            <div class="pricing-element animation animation-pop">
+                <p class="heading">SITE VITRINE <br>MULTI-PAGES</p>
+                <p class="subheading">À PARTIR DE</p>
+                <p class="price">749<sup>€*</sup></p>
+                <p class="techno">Sur-mesure (codage à la main)</p>
+                <a class="button-quote" href="#contact">Demander un devis</a>
+                <ul>
+                    <li>Maquettage</li>
+                    <li>Développement complet</li>
+                    <li>Site 2 pages ou plus</li>
+                    <li>Compatibilité <br>PC / mobile / tablette</li>
+                    <li>Domaine + hébergement 12 mois</li>
+                    <li>Optimisation du référencement</li>
+                    <li>Formation à l'utilisation du site</li>
+                    <li>Support 1 an</li>
+                </ul>
+            </div>
+            <div class="pricing-element animation animation-pop">
+                <p class="heading">PLATEFORME <br>E-COMMERCE</p>
+                <p class="subheading">À PARTIR DE</p>
+                <p class="price">1699<sup>€*</sup></p>
+                <p class="techno">Basé sur medusa.js</p>
+                <a class="button-quote" href="#contact">Demander un devis</a>
+                <ul>
+                    <li>Maquettage</li>
+                    <li>Développement complet</li>
+                    <li>Compatibilité <br>PC / mobile / tablette</li>
+                    <li>Paiement des clients en ligne</li>
+                    <li>Interface dédiée de gestion produits</li>
+                    <li>Interface d'administration</li>
+                    <li>Domaine + hébergement 12 mois</li>
+                    <li>Formation à l'utilisation du site</li>
+                    <li>Support 1 an</li>
+                </ul>
+            </div>
+            <div class="pricing-element animation animation-pop">
+                <p class="heading">SOLUTION PERSONNALISÉE</p>
+                <p class="subheading">TAUX JOURNALIER MOYEN</p>
+                <p class="price">250<sup>€*/JOUR</sup></p>
+                <p class="techno">Application web, logiciel ou mobile</p>
+                <a class="button-quote" href="#contact">Me contacter</a>
+                <ul>
+                    <li>Etude avec le client du besoin</li>
+                    <li>Soutien pour la définition du cahier des charges</li>
+                    <li>Suivi complet d'avancée</li>
+                    <li>Développement complet</li>
+                    <li>Déploiement de la solution</li>
+                    <li>Support 1 an après déploiement</li>
+                </ul>
+            </div>
+        </div>
+        <p class="info animation animation-fading">* Prix H.T. TVA non applicable, article 293 B du CGI. Les tarifs sont données uniquement à titre indicatif : Changement possible en fonction des demandes et choix du client.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2 class="subtitle animation animation-fading">Contact</h2>
+        <h3 class="subsubtitle animation animation-fading">Une question, une demande de devis, ou une étude de votre projet ?</h3>
+        <div class="contact-form animation animation-pop">
+            <form id="my-form" action="https://formspree.io/f/xvgqwnyr" method="POST">
+                <div class="form-parent">
+                    <div class="form-element">
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </div>
+                    <div class="form-element">
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                    </div>
+                </div>
+                <div class="form-parent">
+                    <div class="form-element">
+                        <input type="email" id="email" name="email" placeholder="Mail" required>
+                    </div>
+                    <div class="form-element">
+                        <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <textarea id="message" name="message" placeholder="Détaillez le plus possible votre besoin pour faciliter nos futurs échanges." required></textarea>
+                </div>
+                <div id="captcha-container">
+                    <p>Veuillez accepter les cookies pour envoyer un message</p>
+                </div>
+                <div class="form-element send-container">
+                    <button class="send-button" type="submit">Envoyer</button>
+                    <p id="my-form-status"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <div>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/#contact">Contact</a>
+    </div>
+    <p>© 2025 - PETIT Melvyn Développeur web freelance | Tous droits réservés</p>
+</footer>
+
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+<script>
+    import "../assets/scripts/contact-form.js"
+
+    const menuHamburger = document.querySelector(".btn-burger");
+    const aside = document.querySelector(".aside");
+    const main = document.getElementById("main");
+
+    const captchaContainer = document.getElementById("captcha-container");
+    if(captchaContainer){
+        captchaContainer.innerHTML = `<div class="g-recaptcha form-element" data-sitekey="6LclkpwrAAAAADgWZNuqAdxAJ_vuGpKPW2DpZmBK"></div>`;
+    }
+
+    //****************************************
+    //******* animations d'affichages*********
+    //****************************************
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // retire l'observation après l'animation
+        }
+        });
+    });
+    document.querySelectorAll('.animation').forEach(el => {
+        observer.observe(el);
+    });
+
+    /* ********************************* */
+
+    //burger bouton
+    menuHamburger.addEventListener('click',()=>{
+        aside.classList.toggle('mobile-menu');
+    })
+
+    //main click
+    main.addEventListener('click', ()=>{
+        aside.classList.remove('mobile-menu');
+    })
+
+    //****************************************
+    //******* animations du curseur **********
+    //****************************************
+    document.addEventListener("DOMContentLoaded", () => {
+    const mots = ["développeur web", "web designer", "ingénieur logiciel", "à votre écoute"];
+    const el = document.querySelector(".typed");
+    let mot = 0, lettre = 0, efface = false, writing = true;
+
+    function ecrire() {
+        el.classList.add("typing");
+        el.classList.remove("done");
+
+        const txt = mots[mot].slice(0, lettre);
+        el.textContent = txt;
+
+        if (!efface && lettre < mots[mot].length) {
+            lettre++;
+            setTimeout(ecrire, 75);
+        } else if (!efface) {
+            // Pause fin saisie avant effacement
+            el.classList.remove("typing");
+            el.classList.add("done");
+            setTimeout(() => { efface = true; ecrire(); }, 2500);
+        } else if (efface && lettre > 0) {
+            lettre--;
+            setTimeout(ecrire, 30);
+        } else {
+            efface = false;
+            mot = (mot + 1) % mots.length;
+            setTimeout(ecrire, 50);
+        }
+    }
+
+    ecrire();
+    });
+
+
+    /*
+    Gestion aside element courant
+    */
+    let navmenulinks = document.querySelectorAll('.menu a');
+
+    function navmenuScrollspy() {
+        const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        navmenulinks.forEach(navmenulink => {
+            const id = navmenulink.getAttribute("href")?.replace('#', '');
+            const section = document.querySelector("section#" + id);
+            
+            if (!section) return;
+
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            document.querySelectorAll('.menu li.active').forEach(link => link.classList.remove('active'));
+
+            navmenulink.parentElement.classList.add('active');
+            }
+        });
+    }
+
+window.addEventListener('load', navmenuScrollspy);
+document.addEventListener('scroll', navmenuScrollspy);
+
+</script>

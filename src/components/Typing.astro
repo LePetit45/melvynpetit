@@ -1,0 +1,51 @@
+---
+---
+
+
+<div class="typing-container">
+  Je suis <span id="typed"></span>
+</div>
+
+<style>
+  .typing-container {
+    font-family: monospace;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .typed::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+</style>
+
+<script>
+  const mots = ["développeur web", "designer", "freelancer"];
+  const el = document.getElementById(".typed");
+  let mot = 0, lettre = 0, efface = false;
+
+  function ecrire() {
+    const txt = mots[mot].slice(0, lettre);
+    el.textContent = txt;
+
+    if (!efface && lettre < mots[mot].length) {
+      lettre++;
+      setTimeout(ecrire, 100);
+    } else if (!efface) {
+      setTimeout(() => { efface = true; ecrire(); }, 1500);
+    } else if (efface && lettre > 0) {
+      lettre--;
+      setTimeout(ecrire, 50);
+    } else {
+      efface = false;
+      mot = (mot + 1) % mots.length;
+      setTimeout(ecrire, 300);
+    }
+  }
+
+  ecrire();
+</script>
